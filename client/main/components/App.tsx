@@ -20,6 +20,9 @@ interface AppProps {
 }
 
 class App extends React.Component<AppProps, void> {
+  constructor(props, context){
+    super(props, context);
+  }
 
   render() {
     const { todos, dispatch } = this.props;
@@ -41,7 +44,6 @@ class App extends React.Component<AppProps, void> {
     );
   }
 }
-
 const mapStateToProps = state => ({
   todos: state.todos
 });

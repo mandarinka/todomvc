@@ -26,7 +26,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, void> {
         return(
             <ul className={autocompleteClass}>
                 {
-                    todos.map(todo => {return <li onClick={this.handleUpdateTextInput} key={todo.id} data-todo={todo}>{todo.text}</li>;})
+                    todos.map(todo => {return <li onClick={this.handleUpdateTextInput} key={todo.id}>{todo.text}</li>;})
                 }
             </ul>
         );
